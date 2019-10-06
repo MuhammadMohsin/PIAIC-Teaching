@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Spanning Rows</h1>
+    <table border="2">
+        <tr>
+            <td></td>
+            <td>Sat</td>
+            <td>Sun</td>
+        </tr>
+        <tr>
+            <td>2-6</td>
+            <td rowspan="2">CNC</td>
+            <td rowspan="2">AI</td>
+        </tr>
+        <tr>
+            <td>6-10</td>
+        </tr>
+    </table>
+
+    <h1>Spanning Columns</h1>
+
+    <table border="2">
+        <tr>
+            <td></td>
+            <td>9-1</td>
+            <td>1-4</td>
+            <td>4-6</td>
+            <td>6-10</td>
+        </tr>
+        <tr>
+            <td>Sat</td>
+            <td colspan="3">CNC</td>
+            <td>AI</td>
+        </tr>
+        <tr>
+            <td>Sun</td>
+            <td colspan="2">CNC</td>
+            <td colspan="2">AI</td>
+        </tr>
+    </table>
+</body>
+
+</html>
