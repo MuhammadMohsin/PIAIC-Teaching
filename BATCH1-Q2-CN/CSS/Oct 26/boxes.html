@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <style>
+    .border {
+      border: 10px solid transparent;
+      border-image: url("border.png") 30 30 30 30 stretch;
+      padding: 20px;
+    }
+
+    div.box {
+      height: 150px;
+      width: 300px;
+      box-shadow: 5px 5px 5px #777777;
+    }
+
+    div.radius {
+      height: 150px;
+      width: 300px;
+      border: 1px solid black;
+      /* border-radius:10px; */
+      border-radius: 0px 20px 50px 5px;
+      padding: 10px;
+    }
+
+    .dp {
+      height: 50px;
+      width: 50px;
+      border: 1px solid black;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body>
+  <p class="border">
+    Hello, this is some dummy text which is inside border box!
+  </p>
+
+
+  <div class="box">
+    This is a box
+  </div>
+
+  <br />
+  <br />
+
+  <div class="radius">
+    This is a box
+  </div>
+
+  <div class="dp">
+
+  </div>
+</body>
+
+</html>

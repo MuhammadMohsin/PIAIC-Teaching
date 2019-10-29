@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .my-form {
+            border: 1px solid #44444480;
+            padding: 50px;
+            width: 40%;
+            margin: auto;
+        }
+
+        .title {
+            color: #444444;
+            text-align: center;
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+        }
+
+        input {
+            /* display: block; */
+            /* margin: 10px auto; */
+        }
+
+        .input {
+            background-image: url('./bullet.gif');
+            border: none;
+            border-bottom: 1px solid #44444480;
+            background-repeat: no-repeat;
+            background-size: 10px;
+            border-radius: 2px;
+            margin-bottom: 10px;
+            background-position: left center;
+            padding: 5px 20px;
+        }
+
+        input[type='submit'] {
+            padding: 5px 20px;
+            width: 100%;
+            border: 1px solid #44444480;
+            border-radius: 2px;
+            color: #fff;
+            background: #000;
+            transition: all 0.5s;
+            display: block;
+            margin: 50px auto 0px auto;
+
+        }
+
+        input[type='submit']:hover {
+            cursor: pointer;
+            color: #000;
+            background: #fff;
+            transition: all 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="my-form" action="" method="get">
+        <h1 class="title">Form</h1>
+        <label for="">Username</label>
+        <input class="input" type="text" placeholder="Username" name="username" id="">
+        <br>
+        <label for="">Email</label>
+        <input class="input" type="email" placeholder="Email" name="email" id="">
+        <br>
+        <label for="">Password</label>
+        <input class="input" type="password" placeholder="Password" name="password" id="">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
