@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var animals = ['cat', 'dog'];
+        // alert(animals);
+
+        // push
+        animals.push('monkey');
+        // alert(animals);
+
+        animals.push('rabbit', 'goat');
+        // alert(animals);
+
+        // pop
+        var lastAnimal = animals.pop();
+        alert(lastAnimal);
+        alert(animals);
+
+        // unshift
+        animals.unshift('lizard');
+        alert(animals);
+
+        animals.unshift('leopard', 'lion');
+        alert(animals);
+
+        // shift
+        var removedElementFromBeginning = animals.shift();
+        alert(removedElementFromBeginning)
+        alert(animals);
+
+    </script>
+</body>
+</html>
