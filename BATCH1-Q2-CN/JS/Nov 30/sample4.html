@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var message = "You run an online music service where customers rate each song" +
+            " customer ratings and average them, awarding a song from zero to five stars"
+
+        // for (var i = 0; i < message.length; i++) {
+        //     if (message.slice(i, i + 4) === "song") {
+        //         message = message.slice(0, i) + "movie" + message.slice(i + 4);
+        //     }
+        // }
+
+        // message = message.replace("song","movie");
+
+        message = message.replace(/song/g, "movie");
+        alert(message);
+
+
+    </script>
+</body>
+
+</html>

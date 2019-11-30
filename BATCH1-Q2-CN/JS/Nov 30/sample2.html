@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var username = "alikhan";
+        // alert(username.length);
+        
+        // alert(username.slice(2,5)); //ikh
+
+        var text1 = "My--name---is---khan";
+        // alert(text1.slice(11,13));
+
+        // var userMonth = prompt("Enter your birthday month");
+        // alert(userMonth.slice(0, 3))
+
+
+        var message = "A string is indexed like--an array. Only, instead of each index number referring to an element, it refers to a character."
+        var textLength = message.length;
+
+        // for(var i=0;i<textLength;i++){
+        //     if(message.slice(i,i+2) === "--"){
+        //         alert("-- found!");
+        //         break;
+        //     }
+        // }
+
+        // for(var i=0;i<textLength;i++){
+        //     if(message.slice(i,i+5) === "array"){
+        //         alert("word ARRAY found!");
+        //         break;
+        //     }
+        // }
+
+        message = "I am a human and I -like Mango";
+
+        // alert(message.indexOf("Mango"));
+
+        for(var i=0;i<message.length;i++){
+            if(message.slice(i,i+4) === "like"){
+                // alert(message.slice(0,i))
+                // alert(message.slice(i+4))
+                message = message.slice(0,i) + "dislike" + message.slice(i+4);
+                break;
+            }
+        }
+        // alert(message);
+        alert(message.indexOf("Mango"));
+        alert(message.lastIndexOf("Mango"));
+
+        // alert(message.indexOf("I"));
+        // alert(message.lastIndexOf("I"));
+        // alert(message.indexOf("XYZ"));
+
+    </script>
+</body>
+</html>

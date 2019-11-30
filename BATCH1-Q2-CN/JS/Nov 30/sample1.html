@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var userCity = prompt("Enter your city");
+        var cities = ["Karachi", "Islamabad", "Faisalbad", "Lahore"];
+        var cityExist = false;
+
+        for(var i=0;i<4;i++){
+            if(cities[i].toLocaleLowerCase() === userCity.toLocaleLowerCase()){
+                alert("PIAIC is working in your city");
+                cityExist = true;
+                break;
+            }
+            // else{
+            //     alert("Comming soon!");
+            // }
+        }
+        
+        // if(cityExist === false)
+        if(!cityExist){
+                alert("Comming soon!");
+        }
+    </script>
+</body>
+</html>
