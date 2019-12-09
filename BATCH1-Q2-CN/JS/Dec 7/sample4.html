@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var bd = new Date("Aug 11,2000");
+      var curr = new Date();
+      var timeDiff = curr.getTime() - bd.getTime();
+      var days = timeDiff / (1000 * 60 * 60 * 24);
+      var year = (timeDiff / (1000 * 60 * 60 * 24 * 365)).toFixed(0);
+      var month = (((timeDiff / (1000 * 60 * 60 * 24) / 365) * 12) % 12).toFixed(0);
+      console.log(year, month);
+    </script>
+  </body>
+</html>

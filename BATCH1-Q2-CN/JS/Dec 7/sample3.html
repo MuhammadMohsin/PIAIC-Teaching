@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    var doomsday = new Date("June 30, 2035");
+    var now = new Date();
+    //   console.log(doomsday);
+    //   console.log(now);
+    var msDoomsday = doomsday.getTime();
+    var msNow = now.getTime();
+    var timeDiff = msDoomsday - msNow;
+    var dayDiff = timeDiff / (1000 * 60 * 60 * 24);
+    //   days diff
+    console.log(Math.floor(dayDiff));
+    //   year diff
+    console.log(dayDiff / 365);
+  </script>
+</body>
+
+</html>
