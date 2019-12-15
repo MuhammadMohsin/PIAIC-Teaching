@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        function findGrade(percentage) {
+
+            switch (true) {
+                case (percentage >=80 && percentage <=100):
+                    alert("You got A+");
+                    break;
+
+                case (percentage >=70 && percentage <=79):
+                    alert("You got A Grade");
+                    break;
+
+                case (percentage >=60 && percentage <=69):
+                    alert("You got B");
+                    break;
+
+                case (percentage >=50 && percentage <=59):
+                    alert("You got C grade");
+                    break;
+                default:
+                    alert("Try again!");
+                    break;
+            }
+        }
+
+        findGrade(171);
+    </script>
+  </body>
+</html>

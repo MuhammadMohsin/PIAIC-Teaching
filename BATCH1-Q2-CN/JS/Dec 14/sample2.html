@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //   var a = "Outer variable";
+
+    //   function piaic() {
+    //     var b = "local variable";
+    //   alert(a);
+    // alert(b);
+    //   }
+    //   alert(a);
+    //   alert(b);
+    //   piaic();
+
+    // undefined
+    // var c;
+    // alert(c);
+
+    // reference error
+    //   alert(d);
+
+    // global scope variable
+    /*
+  var a = 10;
+  function myFunc() {
+      // local scope variable
+      a = 20;
+      alert(a);
+  }
+  myFunc();
+  alert(a);
+*/
+    // global scope variable
+    var a = 10;
+    function myFunc() {
+      // local scope variable
+      var a = 20;
+      alert(a);
+    }
+    myFunc();
+    alert(a);
+  </script>
+</body>
+
+</html>
