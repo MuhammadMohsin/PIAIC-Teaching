@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        for (var i = 0; i < 5; i++) {
+            console.log("Value of i is:", i);
+            for (var j = 0; j < 2; j++) {
+                console.log("Value of j is:", j);
+            }
+        }
+        // alert(i);
+
+        // var userName = "Ali";
+        // alert(userName.toLowerCase());
+        // alert(userName.toUpperCase());
+
+        var message = "This is some text and I need some pencils.";
+        // alert(message.indexOf("some")); //8
+        // alert(message.slice(8,12));
+
+        // alert(message.lastIndexOf("some")); //29
+
+        // var temp = message.lastIndexOf("mango"); // -1
+
+        // if(temp !== -1){
+        //     alert("It exists! "+ temp)
+        // }
+        // else {
+        //     alert("Mango is not available in the message: "+ temp)
+        // }
+
+        // alert(message.charAt(29));
+
+        // alert(message.replace("some", "important"));
+        // alert(message.replace(/some/g, "important"));
+        message = message.replace(/some/g, "important");
+        alert(message);
+
+    </script>
+</body>
+
+</html>
