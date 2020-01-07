@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 150px;
+            height: 150px;
+            background-color: cadetblue;
+            border: 1px dotted black;
+            /* display: inline; */
+            display: inline-block;
+            /* display: none; */
+            border-radius: 50%;
+            /* border-radius: 25px; */
+        }
+
+        li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        li.coming-soon {
+            visibility: hidden;
+            /* display: none; */
+        }
+    </style>
+</head>
+
+<body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+
+    <ul>
+        <li>Home</li>
+        <li>Products</li>
+        <li class="coming-soon">Services</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+</body>
+
+</html>

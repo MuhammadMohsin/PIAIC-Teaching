@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Attribute Selector</title>
+    <style>
+        /* Existence selector */
+        /* a[target] {
+            color: red;
+        }
+        p[title] {
+            color: green;
+        } */
+
+        /* Equality selector */
+        /* a[target="_blank"] {
+            color: red;
+        }
+        p[title="Paragraph 1"] {
+            color: green;
+        } */
+
+        /* Space selector */
+        /* p[title~="Paragraph"] {
+            color: green;
+        }
+        a[target="_blank"] {
+            color: red; 
+        }*/
+
+        /* Prefix selector */
+        p[title^="P"] {
+            color: blue;
+        }
+
+        a[target^="_"] {
+            color: red;
+        }
+
+        /* SubString selector */
+        p[title*="ara"] {
+            color: yellow;
+        }
+
+        p[title*="a"] {
+            color: yellow;
+        }
+
+        a[target*="b"] {
+            color: powderblue;
+        }
+
+        a[target*="n"] {
+            color: powderblue;
+        }
+
+        /* Suffix selector */
+        /* p[title$="n"] {
+            color: green;
+        }
+        p[title$=" 1"] {
+            color: green;
+        }
+        a[target$="k"] {
+            color: red;
+        }
+        a[target$="ank"] {
+            color: red;
+        } */
+    </style>
+</head>
+
+<body>
+    <p title="Paragraph 1 main">This is paragraph 1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit,
+        vel.
+        Nobis, dolorem doloremque iste dolorum sapiente, fugit harum magni mollitia ex optio saepe illum! Delectus minus
+        doloremque nihil qui ut!</p>
+    <p>This is paragraph 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis expedita ea
+        dolorum et ex, delectus praesentium atque quas cupiditate at fuga voluptatibus architecto ipsam accusamus.
+        Repellendus, provident. Perspiciatis, dolore!</p>
+
+    <a href="#">Link1</a>
+    <br />
+    <a href="#" target="_blank">Link2</a>
+</body>
+
+</html>
